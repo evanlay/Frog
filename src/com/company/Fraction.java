@@ -11,7 +11,10 @@ public class Fraction {
         denominator = d;
     }
 
-    //TODO default constructor (no arguments)
+    public Fraction(){
+        numerator = 2;
+        denominator = 2;
+    }
 
     public int getNum()
     {
@@ -29,11 +32,27 @@ public class Fraction {
         Fraction result = new Fraction(n,d);
         return result;
     }
+    public Fraction subtract(Fraction other)
+    {
+        int n = this.numerator*other.denominator - this.denominator*other.numerator;
+        int d = this.denominator * other.denominator();
 
-    // TODO  subtract()
+        Fraction result = new Fraction(n,d);
+        return result;
+    }
+    public Fraction multiply(Fraction other)
+    {
+        int n = this.numerator*other.numerator;
+        int d = this.denominator * other.denominator();
 
-    // TODO multiply()
+        Fraction result = new Fraction(n,d);
+        return result;
+    }
+    public String toString(){
+        int n = numerator;
+        int d = denominator;
 
+    }
     // TODO toString()
 
 

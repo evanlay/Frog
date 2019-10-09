@@ -37,6 +37,10 @@ public class Frog {
     {
         yPos=yPos+1;
     }
+    public int jump() {
+        moveEast();
+        moveNorth();
+    }
     //TODO jump method move up and to the right
     //This method should take an integer argument.  This argument controls how many spaces
     // the frog will move both up and right.  Returns no value.
